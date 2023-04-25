@@ -4,9 +4,7 @@
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="594b7a38-90ae-4b3b-942a-f9873f577bb0" basePath="/v1/testgpt" >
-		<http:listener-connection host="0.0.0.0" port="8081" />
-	</http:listener-config>
+	
 	<flow name="testchatgptFlow" doc:id="84829691-eb7b-4902-ba2a-b9bcf4fc0816" >
 		<http:listener doc:name="HTTPListener" doc:id="9ebdd1c2-53f4-41ee-80c8-5550a19679e5" config-ref="HTTP_Listener_config" path="/"/>
 		<logger level="INFO" doc:name="Logger" doc:id="2eed1105-ad70-4909-979c-dd35ac8dce1c" message="Payload is = #[payload]"/>

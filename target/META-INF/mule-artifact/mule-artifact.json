@@ -1,5 +1,6 @@
 {
   "configs": [
+    "global.xml",
     "testchatgpt.xml"
   ],
   "secureProperties": [],
@@ -13,7 +14,9 @@
       "exportedPackages": [],
       "exportedResources": [
         "log4j2.xml",
+        "global.xml",
         "application-types.xml",
+        "config.properties",
         "testchatgpt.xml"
       ]
     }
